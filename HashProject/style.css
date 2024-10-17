@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    height: 80vh;
+    width: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: red;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}

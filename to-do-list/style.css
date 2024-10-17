@@ -1,0 +1,57 @@
+body, #header-title, #main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    flex-direction: column;
+}
+
+.to-do-item {
+    list-style: none;
+    margin: 30px;
+    display: flex;
+}
+
+.title-item {
+    margin-bottom: 10px;
+}
+
+.bin {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-form input, #input-text {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#search-form input {
+    width: 300px;
+}
+
+#input-text {
+    width: 200px;
+}
+
+#add-button {
+    margin-left: 0;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 50px;
+}

@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+#music-name {
+    font-family: Impact, sans-serif;
+    color: white;
+    margin: 40px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+#music-cover {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 38px -10px #2980b9;
+    animation: glow 0.8s ease-in-out infinite alternate;
+    animation-play-state: paused;
+    object-fit: cover; 
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 38px -10px #2980b9;
+    }
+    to {
+        box-shadow: 0 0 38px 10px #2980b9;
+    }
+}
+
+#music-time {
+    width: 80%; 
+    height: 5px;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 60px 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#music-time::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#btns i {
+    font-size: 2.5em;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#btns i:hover{
+    transform: scale(1.2);
+}
+
